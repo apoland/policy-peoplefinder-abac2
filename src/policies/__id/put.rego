@@ -12,10 +12,5 @@ allowed {
 }
 
 allowed {
-    dir.is_manager_of(input.user.id,input.resource.id)
-}
-
-
-allowed {
 	input.user.id == input.resource.id
 }
