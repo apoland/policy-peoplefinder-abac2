@@ -6,6 +6,8 @@ default visible = false
 
 default enabled = false
 
+default foo = false
+
 allowed {
 	props = input.user.attributes.properties
 	props.department == "Operations"
@@ -17,5 +19,9 @@ visible {
 }
 
 enabled {
+	allowed
+}
+
+foo {
 	allowed
 }
